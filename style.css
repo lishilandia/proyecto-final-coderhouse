@@ -1,0 +1,79 @@
+*body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cabecera {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 0px;
+  background: #4044c9;
+}
+
+.logo {
+  position: relative;
+  padding-left: 50px;
+  top: 10px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.header-input {
+  position: relative;
+  top: -52px;
+  left: 200px;
+  width: 350px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: sans-serif;
+  border: 3px solid purple;
+}
+
+.btn {
+  position: relative;
+  top: -49px;
+  left: 150px;
+  height: 37px;
+  width: 45px;
+  border-radius: 0 5px 5px 0;
+  background-color: purple;
+  border: 3px solid purple;
+}
+.lupa {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.modo-de-entrega {
+  position: relative;
+  top: 20px;
+  left: 700px;
+  height: 40px;
+  width: 550px;
+}
+.ingresa,
+.registrate,
+.modo-de-entrega {
+  font-family: sans-serif;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.ingresa,
+.registrate {
+  background-color: purple;
+  border: 3px solid purple;
+}

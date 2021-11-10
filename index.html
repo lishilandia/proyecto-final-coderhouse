@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Document</title>
+  <script src="index.js"></script>
+</head>
+<body>
+    <section class="cabecera">
+      <div class="logo">
+        <h1 class="titulo">PRÉSTAMOS</h1>
+        <input
+          class="header-input"
+          placeholder="¿Qué préstamo te interesa solicitar?"
+        />
+        <button class="btn">
+          <img class="lupa" src="lupa.svg" alt="lupa" />
+        </button>
+      </div>
+    </section>
+    <section class="modo-de-entrega">
+      <button class="registrate" onclick="registrate();">Regístrate</button>
+      <button class="ingresa" onclick="muestraUsuario();">Ingresa</button>
+     
+    <select class="selecciona-modo-de-entrega" onchange="selecciona(event);">
+      <option value="Selecciona">Ejemplos de préstamos</option> 
+      <option value="100000">$100.000</option> 
+      <option value="200000">$200.000</option> 
+      <option value="300000">$300.000</option> 
+      <option value="400000">$400.000</option> 
+    </select>
+    <select class="selecciona-modo-de-entrega" onchange="seleccionaCuota(event);">
+        <option value="NA">Número de cuotas</option> 
+        <option value="0">0 con % 0 de interés</option>
+        <option value="3">3 con % 0.10 de intereses</option>
+        <option value="6">6 con % 0.50 de intereses</option>
+        <option value="12">12 con % 1 de intereses</option>  
+    </select>
+    <script src="./src/App.js"></script>
+  </body>
+</html>
